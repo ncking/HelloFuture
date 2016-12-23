@@ -23,32 +23,32 @@ $twig = new Twig_Environment($loader);
     <body>
         <div class="container">
             <?php
-            echo $twig->render('client.twig', array(
+            echo $twig->render('client.twig', [
                 'title' => 'Client by a-z',
                 'clients' => $clientReporter->getClients()
-            ));
+            ]);
 
-            echo $twig->render('singleRow.twig', array(
+            echo $twig->render('singleRow.twig', [
                 'title' => 'Total hours booked',
                 'content' => $clientReporter->getTotalHours()
-            ));
+            ]);
 
 
-            echo $twig->render('singleRow.twig', array(
+            echo $twig->render('singleRow.twig', [
                 'title' => 'Total hours unbooked',
                 'content' => $unbookedReporter->getTotalHours()
-            ));
+            ]);
 
-            echo $twig->render('client.twig', array(
+            echo $twig->render('client.twig', [
                 'title' => 'Client by hours',
                 'clients' => $clientReporter->getClientsByHours()
-            ));
+            ]);
 
 
-            echo $twig->render('unbooked.twig', array(
+            echo $twig->render('unbooked.twig', [
                 'title' => 'Unbooked ranges',
                 'ranges' => $unbookedReporter->getRanges()
-            ));
+            ]);
 
             ?>
 

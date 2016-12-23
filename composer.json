@@ -1,0 +1,27 @@
+{ 
+    "name": "pc/hello_future",
+    "authors": [
+        {
+            "name": "Nigel",
+            "email": "Nigel.c.King@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "sabre/vobject": "^4.1",
+        "twig/twig": "^1.30"
+    },
+    "autoload": {
+        "psr-4": {
+            "HelloFuture\\": "lib\\HelloFuture"
+        }
+    },
+    "config": {
+        "vendor-dir": "lib/vendor",
+        "optimize-autoloader": true
+    },
+    "scripts": {
+        "pre-autoload-dump": [
+        ]
+    }
+}

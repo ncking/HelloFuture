@@ -1,5 +1,4 @@
-# HelloFuture
-Iterview test for HelloFuture
+# iCal schedule reporter - interview task
 
 There are a few assumptions / caveats
 
